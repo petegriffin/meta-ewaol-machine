@@ -72,3 +72,6 @@ repos:
 local_conf_header:
   base: |
     WKS_FILE="ledge-secure.wks.in"
+    DISTRO_FEATURES:append = " tpm2"
+    DISTRO_FEATURES:append = " polkit"
+    DISTRO_FEATURES:append = " efi"
